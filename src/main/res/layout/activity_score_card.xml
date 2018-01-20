@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.scorecard.ScoreCard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <ImageView
+        android:id="@+id/momacenkovsrigondeaux"
+        android:layout_width="wrap_content"
+        android:layout_height="218dp"
+        android:src="@drawable/lomachenkovsrigondeaux" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:text="Rigondeaux"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jab = 1 point"
+                android:layout_margin="5dp"
+                android:onClick="addOneForRigo"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cross = 1 point"
+                android:layout_margin="5dp"
+                android:onClick="addOneForRigo"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hook = 2 point"
+                android:layout_margin="5dp"
+                android:onClick="addTwoForRigo"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="uppercut = 3 point"
+                android:layout_margin="5dp"
+                android:onClick="addThreeForRigo"/>
+
+            <TextView
+                android:id="@+id/score_rigandeaux"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Total"
+                android:textSize="30sp"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Lomachenko"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:padding="5dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jab = 1 point"
+                android:layout_margin="5dp"
+                android:onClick="addOneForLoma"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cross = 1 point"
+                android:layout_margin="5dp"
+                android:onClick="addOneForLoma"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hook = 2 point"
+                android:layout_margin="5dp"
+                android:onClick="addTwoForLoma"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="uppercut = 3 point"
+                android:layout_margin="5dp"
+                android:onClick="addThreeForLoma"/>
+
+            <TextView
+                android:id="@+id/score_lomachenko"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Total"
+                android:textSize="30sp"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="reset"
+        android:layout_margin="5dp"
+        android:onClick="resetScore"/>
+
+</LinearLayout>
+</ScrollView>
